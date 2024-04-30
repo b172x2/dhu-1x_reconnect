@@ -3,13 +3,13 @@ echo WIFI自动重连服务正在进行中.......
 echo 停止服务请按 Ctrl+C
 :begin
 echo %date% %time%
-ping baidu.com
+ping 36.155.132.76
 rem echo %errorlevel%
 if %errorlevel%==1 goto ping2
 goto loop
  
 :ping2
-ping 36.155.132.76
+ping 219.228.76.103
 rem echo %errorlevel%
 if %errorlevel%==1 goto reconnect
 goto loop
